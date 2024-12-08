@@ -5,19 +5,19 @@ import { Flex } from '../styles/flex';
 export const Testimonials = () => {
    const testimonials = [
       {
-         quote: "CUAstro has revolutionized our warehouse operations. The autonomous drones provide real-time inventory tracking that's both accurate and efficient.",
+         quote: "&quot;CUAstro has revolutionized our warehouse operations. The autonomous drones provide real-time inventory tracking that's both accurate and efficient.&quot;",
          author: "Sarah Johnson",
          position: "Operations Director",
          company: "Global Logistics Inc."
       },
       {
-         quote: "The precision and reliability of CUAstro's indoor navigation system is impressive. It's transformed how we handle facility security.",
+         quote: "&quot;The precision and reliability of CUAstro's indoor navigation system is impressive. It's transformed how we handle facility security.&quot;",
          author: "Michael Chen",
          position: "Security Manager",
          company: "SecureSpace Solutions"
       },
       {
-         quote: "Implementation was smooth and the results were immediate. Our indoor mapping efficiency improved by 300%.",
+         quote: "&quot;Implementation was smooth and the results were immediate. Our indoor mapping efficiency improved by 300%.&quot;",
          author: "David Wilson",
          position: "Project Lead",
          company: "BuildTech Construction"

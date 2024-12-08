@@ -1,4 +1,5 @@
 import { Text } from '@nextui-org/react';
+import Image from 'next/image';
 import { TeamMembers } from '../navbar/logo';
 import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
@@ -30,6 +31,7 @@ export const Team = () => {
                   >
                      <Box 
                         css={{
+                           position: 'relative',
                            width: '120px',
                            height: '120px',
                            borderRadius: '50%',
@@ -38,13 +40,12 @@ export const Team = () => {
                            backgroundColor: '$accents2'
                         }}
                      >
-                        <img 
+                        <Image
                            src={`/team/${member.pinyin.replace(/\s+/g, '-')}.jpg`}
                            alt={member.name}
+                           fill
                            style={{
-                              width: '100%',
-                              height: '100%',
-                              objectFit: 'cover'
+                              objectFit: 'cover',
                            }}
                         />
                      </Box>

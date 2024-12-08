@@ -1,4 +1,5 @@
 import { Button, Divider, Text } from '@nextui-org/react';
+import Image from 'next/image';
 import { CheckIcon } from '../icons/CheckIcon';
 import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
@@ -118,24 +119,31 @@ export const Hero = () => {
             </Box>
             <Box
                css={{
-                  '& img': {
-                     width: '1200px',
-                     height: '650px',
-                     objectFit: 'contain',
-                     borderRadius: '24px',
-                     boxShadow: '0 8px 30px rgba(0, 0, 0, 0.12)',
-                     '@sm': {
-                        width: '800px',
-                        height: '550px',
-                     },
-                     '@xs': {
-                        width: '600px',
-                        height: '450px',
-                     },
+                  position: 'relative',
+                  width: '1200px',
+                  height: '650px',
+                  '@sm': {
+                     width: '800px',
+                     height: '550px',
                   },
+                  '@xs': {
+                     width: '600px',
+                     height: '450px',
+                  },
+                  borderRadius: '24px',
+                  overflow: 'hidden',
+                  boxShadow: '0 8px 30px rgba(0, 0, 0, 0.12)',
                }}
             >
-               <img src="drone-hero.png" alt="CUAstro Drone in Action" />
+               <Image
+                  src="/drone-hero.png"
+                  alt="CUAstro Drone in Action"
+                  fill
+                  style={{
+                     objectFit: 'contain',
+                  }}
+                  priority
+               />
             </Box>
          </Flex>
          <Divider
