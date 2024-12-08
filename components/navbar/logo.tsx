@@ -60,7 +60,7 @@ export const TeamMembers = {
       bio: 'Backend development'
    },
    LiuXuChen: {
-      name: 'Liu Xuchen',
+      name: 'X. Liu',
       pinyin: 'liu xu chen',
       role: 'Hardware Engineer',
       bio: 'Hardware development'
