@@ -1,194 +1,64 @@
-import {Button, Divider, Text} from '@nextui-org/react';
-import React from 'react';
-import {BoxIcon} from '../icons/BoxIcon';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import { Text } from '@nextui-org/react';
+import { Box } from '../styles/box';
+import { Flex } from '../styles/flex';
 
 export const Faq = () => {
+   const faqs = [
+      {
+         question: 'How does CUAstro navigate indoors without GPS?',
+         answer: 'CUAstro uses advanced SLAM (Simultaneous Localization and Mapping) technology combined with multiple sensors including LiDAR, cameras, and IMUs to create real-time maps and navigate indoor spaces accurately.'
+      },
+      {
+         question: 'What safety measures are in place?',
+         answer: 'Our drones are equipped with multiple redundant safety systems, including obstacle avoidance sensors, fail-safe protocols, and emergency landing capabilities.'
+      },
+      {
+         question: 'How long can the drones operate?',
+         answer: 'Flight time varies by model, ranging from 8 hours for our basic model to 12+ hours for professional models, with quick-swap battery options available.'
+      },
+      {
+         question: 'Can CUAstro integrate with existing systems?',
+         answer: 'Yes, CUAstro is designed with open APIs and standard protocols, allowing seamless integration with existing security, inventory, and management systems.'
+      }
+   ];
+
    return (
-      <>
-         <Flex
-            css={{
-               py: '$20',
-               gap: '$18',
-               px: '$6',
-            }}
-            direction={'column'}
-         >
-            <Flex align={'center'} direction={'column'}>
-               <Text span css={{color: '$blue600'}}>
-                  FAQ
+      <Box css={{ px: '$6', py: '$20' }}>
+         <Flex direction="column" align="center" css={{ gap: '$10' }}>
+            <Box css={{ maxWidth: '800px', textAlign: 'center' }}>
+               <Text span css={{ color: '$blue600' }}>FAQ</Text>
+               <Text h2>Common Questions</Text>
+               <Text span css={{ color: '$accents8' }}>
+                  Find answers to frequently asked questions about CUAstro
                </Text>
-               <Text h2>You Have Questions?</Text>
-               <Text
-                  span
-                  css={{
-                     maxWidth: '700px',
-                     color: '$accents8',
-                     textAlign: 'center',
-                  }}
-               >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                  aliquet
-               </Text>
-            </Flex>
-
-            <Flex
-               css={{
-                  'gap': '$10',
-                  '@lg': {
-                     px: '$64',
-                  },
+            </Box>
+            <Flex 
+               direction="column" 
+               css={{ 
+                  gap: '$10',
+                  maxWidth: '800px',
+                  width: '100%'
                }}
-               direction={'column'}
             >
-               <Flex css={{gap: '$5'}} justify={'center'}>
-                  <BoxIcon />
-                  <Flex direction={'column'} css={{gap: '$3'}}>
-                     <Text h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit?
+               {faqs.map((faq, index) => (
+                  <Box 
+                     key={index}
+                     css={{
+                        padding: '$10',
+                        borderRadius: '$lg',
+                        backgroundColor: '$backgroundContrast'
+                     }}
+                  >
+                     <Text h4 css={{ marginBottom: '$4' }}>
+                        {faq.question}
                      </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Sed condimentum, nisl ut aliquam
-                        lacinia, nisl nisl aliquet aliquet Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit. Sed condimentum, nisl
-                        ut aliquam lacinia, nisl nisl aliquet aliquet Lorem
-                        ipsum dolor sit amet, aliquam lacinia, nisl nisl aliquet
-                        aliquet
+                     <Text css={{ color: '$accents8' }}>
+                        {faq.answer}
                      </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                        nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                        condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                        aliquet elit. Sed condimentum, nisl ut aliquam lacinia,
-                        nisl nisl aliquet aliquet
-                     </Text>
-                  </Flex>
-               </Flex>
-
-               <Flex css={{gap: '$5'}} justify={'center'}>
-                  <BoxIcon />
-                  <Flex direction={'column'} css={{gap: '$3'}}>
-                     <Text h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit?
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                        adipiscing adipiscing elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Sed
-                        condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                        aliquet
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                        nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                        condimentum, aliquet
-                     </Text>
-                  </Flex>
-               </Flex>
-
-               <Flex css={{gap: '$5'}} justify={'center'}>
-                  <BoxIcon />
-                  <Flex direction={'column'} css={{gap: '$3'}}>
-                     <Text h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit?
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                        nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                        condimentum, Sed condimentum, nisl ut aliquam lacinia,
-                        nisl nisl aliquet aliquet
-                     </Text>
-                  </Flex>
-               </Flex>
-
-               <Flex css={{gap: '$5'}} justify={'center'}>
-                  <BoxIcon />
-                  <Flex direction={'column'} css={{gap: '$3'}}>
-                     <Text h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit?
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                        nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                        condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                        aliquet elit. Sed condimentum, nisl ut aliquam lacinia,
-                        nisl nisl aliquet aliquet
-                     </Text>
-                  </Flex>
-               </Flex>
+                  </Box>
+               ))}
             </Flex>
          </Flex>
-
-         <Divider
-            css={{position: 'absolute', inset: '0p', left: '0', mt: '$5'}}
-         />
-      </>
+      </Box>
    );
 };

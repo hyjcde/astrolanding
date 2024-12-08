@@ -1,27 +1,37 @@
-import {Button, Dropdown, Link, Navbar, Switch, Text} from '@nextui-org/react';
-import React from 'react';
-import {ModalLogin} from '../modal';
-import {icons} from './icons';
-import {AcmeLogo} from './logo';
-import {useTheme as useNextTheme} from 'next-themes';
-import {useTheme} from '@nextui-org/react';
-import {GithubIcon} from '../icons/GithubIcon';
+import { Button, Dropdown, Link, Navbar, Switch, Text, useTheme } from '@nextui-org/react';
+import { useTheme as useNextTheme } from 'next-themes';
+import { icons } from './icons';
+import { AcmeLogo } from './logo';
 
 export const Nav = () => {
    const {setTheme} = useNextTheme();
-   const {isDark, type} = useTheme();
+   const {isDark} = useTheme();
    const collapseItems = [
-      'Features',
-      'Customers',
-      'Pricing',
-      'Company',
-      'Legal',
+      'Solutions',
+      'Technology',
+      'Teams',
+      'Price',
+      'Contact',
    ];
+
+   const scrollToSection = (e: React.MouseEvent<HTMLElement>, id: string) => {
+      e.preventDefault();
+      const element = document.getElementById(id);
+      if (element) {
+         element.scrollIntoView({ behavior: 'smooth' });
+      }
+   };
+
    return (
       <Navbar
          isBordered
          css={{
+            'position': 'fixed',
+            'top': 0,
+            'left': 0,
+            'right': 0,
             'overflow': 'hidden',
+            'zIndex': 999,
             '& .nextui-navbar-container': {
                background: '$background',
                borderBottom: 'none',
@@ -32,7 +42,7 @@ export const Nav = () => {
             <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
             <AcmeLogo />
             <Text b color="inherit" hideIn="xs">
-               ACME
+               CUAstro
             </Text>
             <Navbar.Content
                hideIn="sm"
@@ -53,11 +63,11 @@ export const Nav = () => {
                         iconRight={icons.chevron}
                         ripple={false}
                      >
-                        Features
+                        Solutions
                      </Dropdown.Button>
                   </Navbar.Item>
                   <Dropdown.Menu
-                     aria-label="ACME features"
+                     aria-label="CUAstro solutions"
                      css={{
                         '$$dropdownMenuWidth': '340px',
                         '$$dropdownItemHeight': '70px',
@@ -75,52 +85,63 @@ export const Nav = () => {
                      }}
                   >
                      <Dropdown.Item
-                        key="autoscaling"
+                        key="warehouse"
                         showFullDescription
-                        description="ACME scales apps to meet user demand, automagically, based on load."
+                        description="Automated inventory tracking and infrastructure inspection in warehouses."
                         icon={icons.scale}
                      >
-                        Autoscaling
+                        Warehouse Automation
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="usage_metrics"
+                        key="security"
                         showFullDescription
-                        description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+                        description="Autonomous patrol and monitoring for enhanced security coverage."
                         icon={icons.activity}
                      >
-                        Usage Metrics
+                        Security Surveillance
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="production_ready"
+                        key="inspection"
                         showFullDescription
-                        description="ACME runs on ACME, join us and others serving requests at web scale."
+                        description="Detailed infrastructure inspection and monitoring solutions."
                         icon={icons.flash}
                      >
-                        Production Ready
+                        Infrastructure Inspection
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="99_uptime"
+                        key="events"
                         showFullDescription
-                        description="Applications stay on the grid with high availability and high uptime guarantees."
+                        description="Dynamic aerial coverage for indoor events and exhibitions."
                         icon={icons.server}
                      >
-                        +99% Uptime
-                     </Dropdown.Item>
-                     <Dropdown.Item
-                        key="supreme_support"
-                        showFullDescription
-                        description="Overcome any challenge with a supporting team ready to respond."
-                        icon={icons.user}
-                     >
-                        +Supreme Support
+                        Event Coverage
                      </Dropdown.Item>
                   </Dropdown.Menu>
                </Dropdown>
-               <Navbar.Link isActive href="#">
-                  Customers
+               <Navbar.Link 
+                  href="#technology" 
+                  onClick={(e) => scrollToSection(e, 'technology')}
+               >
+                  Technology
                </Navbar.Link>
-               <Navbar.Link href="#">Pricing</Navbar.Link>
-               <Navbar.Link href="#">Company</Navbar.Link>
+               <Navbar.Link 
+                  href="#teams" 
+                  onClick={(e) => scrollToSection(e, 'teams')}
+               >
+                  Teams
+               </Navbar.Link>
+               <Navbar.Link 
+                  href="#price" 
+                  onClick={(e) => scrollToSection(e, 'price')}
+               >
+                  Price
+               </Navbar.Link>
+               <Navbar.Link 
+                  href="#contact" 
+                  onClick={(e) => scrollToSection(e, 'contact')}
+               >
+                  Contact
+               </Navbar.Link>
             </Navbar.Content>
          </Navbar.Brand>
 
@@ -132,59 +153,36 @@ export const Nav = () => {
                      css={{
                         minWidth: '100%',
                      }}
-                     href="#"
+                     href={`#${item.toLowerCase()}`}
+                     onClick={(e) => scrollToSection(e, item.toLowerCase())}
                   >
                      {item}
                   </Link>
                </Navbar.CollapseItem>
             ))}
             <Navbar.CollapseItem>
-               <Link
-                  color="inherit"
-                  css={{
-                     minWidth: '100%',
-                  }}
-                  target="_blank"
-                  href="https://github.com/Siumauricio/landing-template-nextui"
-               >
-                  <GithubIcon />
-               </Link>
-            </Navbar.CollapseItem>
-            <Navbar.CollapseItem>
                <Switch
                   checked={isDark}
-                  onChange={(e) =>
-                     setTheme(e.target.checked ? 'dark' : 'light')
-                  }
+                  onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                />
             </Navbar.CollapseItem>
          </Navbar.Collapse>
-         <Navbar.Content>
-            <ModalLogin />
 
+         <Navbar.Content>
             <Navbar.Item>
-               <Button auto flat href="#">
-                  Start free trial
+               <Button auto flat>
+                  Schedule Demo
                </Button>
             </Navbar.Item>
-            <Navbar.Item hideIn={'xs'}>
-               <Link
-                  color="inherit"
-                  css={{
-                     minWidth: '100%',
-                  }}
-                  target="_blank"
-                  href="https://github.com/Siumauricio/landing-template-nextui"
-               >
-                  <GithubIcon />
-               </Link>
+            <Navbar.Item>
+               <Button auto>
+                  Contact Sales
+               </Button>
             </Navbar.Item>
             <Navbar.Item hideIn={'xs'}>
                <Switch
                   checked={isDark}
-                  onChange={(e) =>
-                     setTheme(e.target.checked ? 'dark' : 'light')
-                  }
+                  onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                />
             </Navbar.Item>
          </Navbar.Content>

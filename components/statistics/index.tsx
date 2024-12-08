@@ -1,89 +1,82 @@
-import {Button, Divider, Text} from '@nextui-org/react';
-import React from 'react';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import { Text } from '@nextui-org/react';
+import { Box } from '../styles/box';
+import { Flex } from '../styles/flex';
 
-export const Statistics = () => {
+export const Achievements = () => {
+   const stats = [
+      {
+         number: '100+',
+         label: 'Successful Deployments',
+         description: 'Across various industries'
+      },
+      {
+         number: '1M+',
+         label: 'Flight Hours',
+         description: 'Of autonomous operation'
+      },
+      {
+         number: '99.9%',
+         label: 'Reliability',
+         description: 'System uptime'
+      },
+      {
+         number: '50+',
+         label: 'Enterprise Clients',
+         description: 'Worldwide'
+      }
+   ];
+
    return (
-      <>
-         <Box
-            css={{
-               pt: '$20',
-               pb: '$16',
-               px: '$6',
-            }}
-         >
-            <Flex direction={'column'} align={'center'}>
-               <Text
-                  h3
-                  css={{
-                     textAlign: 'center',
-                  }}
-               >
-                  Over 8000+ projects completed
+      <Box 
+         css={{ 
+            px: '$6', 
+            py: '$20',
+            backgroundColor: '$blue50'
+         }}
+      >
+         <Flex direction="column" align="center" css={{ gap: '$10' }}>
+            <Box css={{ maxWidth: '800px', textAlign: 'center' }}>
+               <Text span css={{ color: '$blue600' }}>Our Impact</Text>
+               <Text h2>CUAstro by the Numbers</Text>
+               <Text span css={{ color: '$accents8' }}>
+                  Delivering measurable results through innovative technology
                </Text>
-               <Text
-                  span
-                  css={{
-                     maxWidth: '800px',
-                     textAlign: 'center',
-                  }}
-               >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto provident omnis deleniti temporibus pariatur corporis
-                  aperiam
-               </Text>
-            </Flex>
-            <Flex
-               direction={'row'}
-               wrap={'wrap'}
-               justify={'center'}
-               css={{
-                  'gap': '4rem',
-                  'pt': '$16',
-                  '@sm': {
-                     gap: '10rem',
-                  },
-               }}
+            </Box>
+            <Flex 
+               css={{ gap: '$10' }} 
+               wrap="wrap" 
+               justify="center"
             >
-               <Flex direction={'column'}>
-                  <Text h2 css={{color: '$blue600'}}>
-                     $500K+
-                  </Text>
-                  <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Revenue
-                  </Text>
-               </Flex>
-               <Flex direction={'column'}>
-                  <Text h2 css={{color: '$blue600'}}>
-                     10+
-                  </Text>
-                  <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Products
-                  </Text>
-               </Flex>
-               <Flex direction={'column'}>
-                  <Text h2 css={{color: '$blue600'}}>
-                     $150+
-                  </Text>
-                  <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Components
-                  </Text>
-               </Flex>
-               <Flex direction={'column'}>
-                  <Text h2 css={{color: '$blue600'}}>
-                     10+
-                  </Text>
-                  <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Employees
-                  </Text>
-               </Flex>
+               {stats.map((stat, index) => (
+                  <Box 
+                     key={index}
+                     css={{
+                        width: '250px',
+                        padding: '$10',
+                        borderRadius: '$lg',
+                        backgroundColor: '$background',
+                        textAlign: 'center'
+                     }}
+                  >
+                     <Text 
+                        h2 
+                        css={{ 
+                           color: '$blue600',
+                           marginBottom: '$4'
+                        }}
+                     >
+                        {stat.number}
+                     </Text>
+                     <Text h4 css={{ marginBottom: '$2' }}>
+                        {stat.label}
+                     </Text>
+                     <Text css={{ color: '$accents8' }}>
+                        {stat.description}
+                     </Text>
+                  </Box>
+               ))}
             </Flex>
-         </Box>
-
-         <Divider
-            css={{position: 'absolute', inset: '0p', left: '0', mt: '$5'}}
-         />
-      </>
+         </Flex>
+      </Box>
    );
 };

@@ -1,9 +1,7 @@
-import {Divider, Grid, Text} from '@nextui-org/react';
-import React from 'react';
-import {BoxIcon} from '../icons/BoxIcon';
-import {FeatureIcon} from '../icons/FeatureIcon';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import { Divider, Text } from '@nextui-org/react';
+import { BoxIcon } from '../icons/BoxIcon';
+import { FeatureIcon } from '../icons/FeatureIcon';
+import { Flex } from '../styles/flex';
 
 export const Features1 = () => {
    return (
@@ -28,9 +26,9 @@ export const Features1 = () => {
          >
             <Flex direction="column">
                <Text span css={{color: '$blue600'}}>
-                  Awesome Feature
+                  Core Features
                </Text>
-               <Text h3>Your title here</Text>
+               <Text h3>Autonomous Indoor Navigation</Text>
                <Text
                   span
                   css={{
@@ -38,10 +36,9 @@ export const Features1 = () => {
                      color: '$accents8',
                   }}
                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec tincidunt nisl lorem eu nunc. Sed euismod, nisl ut aliquam
-                  lacinia,
+                  CUAstro is an advanced autonomous drone system designed specifically 
+                  for indoor exploration and mapping. Our cutting-edge technology 
+                  enables drones to navigate complex indoor environments without GPS.
                </Text>
 
                <Flex
@@ -53,7 +50,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
+                        Advanced SLAM Technology
                      </Text>
                      <Text
                         span
@@ -62,9 +59,8 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                        Utilizing state-of-the-art Simultaneous Localization and Mapping 
+                        (SLAM) algorithms for precise navigation and real-time mapping.
                      </Text>
                   </Flex>
                </Flex>
@@ -77,7 +73,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
+                        Obstacle Avoidance
                      </Text>
                      <Text
                         span

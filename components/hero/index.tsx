@@ -1,8 +1,7 @@
-import {Button, Divider, Input, Text} from '@nextui-org/react';
-import React from 'react';
-import {CheckIcon} from '../icons/CheckIcon';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import { Button, Divider, Text } from '@nextui-org/react';
+import { CheckIcon } from '../icons/CheckIcon';
+import { Box } from '../styles/box';
+import { Flex } from '../styles/flex';
 
 export const Hero = () => {
    return (
@@ -18,7 +17,7 @@ export const Hero = () => {
                'width': '100%',
                '@sm': {
                   flexDirection: 'row',
-                  mt: '$20',
+                  mt: '$10',
                },
             }}
             justify={'center'}
@@ -26,7 +25,6 @@ export const Hero = () => {
             <Box
                css={{
                   pt: '$13',
-
                   display: 'flex',
                   flexDirection: 'column',
                   gap: '$5',
@@ -43,15 +41,7 @@ export const Hero = () => {
                         display: 'inline',
                      }}
                   >
-                     The modern landing page{' '}
-                  </Text>
-                  <Text
-                     h1
-                     css={{
-                        display: 'inline',
-                     }}
-                  >
-                     for{' '}
+                     Autonomous Indoor{' '}
                   </Text>
                   <Text
                      h1
@@ -60,7 +50,7 @@ export const Hero = () => {
                      }}
                      color="primary"
                   >
-                     React developers
+                     Drone Solutions
                   </Text>
                </Box>
 
@@ -72,8 +62,8 @@ export const Hero = () => {
                   size={'$lg'}
                   span
                >
-                  The easiest way to build React Landing page in seconds. Save
-                  time and focus on your project.
+                  Advanced autonomous drones designed specifically for indoor environments. 
+                  Navigate, map, and monitor indoor spaces with unprecedented precision.
                </Text>
 
                <Flex
@@ -83,8 +73,12 @@ export const Hero = () => {
                   }}
                   wrap={'wrap'}
                >
-                  <Input placeholder="Enter your email address" size="lg" />
-                  <Button>Start Free Trial</Button>
+                  <Button size="lg">
+                     Schedule Demo
+                  </Button>
+                  <Button size="lg" bordered>
+                     Learn More
+                  </Button>
                </Flex>
                <Flex
                   wrap={'wrap'}
@@ -102,7 +96,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> No credit card required.
+                     <CheckIcon /> Advanced SLAM Technology
                   </Flex>
                   <Flex
                      css={{
@@ -110,7 +104,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> 14-day free trial.
+                     <CheckIcon /> Real-time Mapping
                   </Flex>
                   <Flex
                      css={{
@@ -118,19 +112,30 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> Cancel anytime.
+                     <CheckIcon /> Autonomous Navigation
                   </Flex>
                </Flex>
             </Box>
             <Box
                css={{
                   '& img': {
-                     width: '775px',
+                     width: '1200px',
+                     height: '650px',
                      objectFit: 'contain',
+                     borderRadius: '24px',
+                     boxShadow: '0 8px 30px rgba(0, 0, 0, 0.12)',
+                     '@sm': {
+                        width: '800px',
+                        height: '550px',
+                     },
+                     '@xs': {
+                        width: '600px',
+                        height: '450px',
+                     },
                   },
                }}
             >
-               <img src="mock.png" />
+               <img src="drone-hero.png" alt="CUAstro Drone in Action" />
             </Box>
          </Flex>
          <Divider
