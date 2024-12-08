@@ -14,7 +14,7 @@ export const Team = () => {
                <Text span css={{ color: '$blue600' }}>Our Team</Text>
                <Text h2>Meet the Experts</Text>
                <Text span css={{ color: '$accents8' }}>
-                  The brilliant minds behind CUAstro's innovative technology
+                  The brilliant minds behind CUAstro&apos;s innovative technology
                </Text>
             </Box>
             <Flex css={{ gap: '$10' }} wrap="wrap" justify="center">

@@ -5,19 +5,19 @@ import { Flex } from '../styles/flex';
 export const Testimonials = () => {
    const testimonials = [
       {
-         quote: "&quot;CUAstro has revolutionized our warehouse operations. The autonomous drones provide real-time inventory tracking that's both accurate and efficient.&quot;",
+         quote: "CUAstro has revolutionized our warehouse operations. The autonomous drones provide real-time inventory tracking that&apos;s both accurate and efficient.",
          author: "Sarah Johnson",
          position: "Operations Director",
          company: "Global Logistics Inc."
       },
       {
-         quote: "&quot;The precision and reliability of CUAstro's indoor navigation system is impressive. It's transformed how we handle facility security.&quot;",
+         quote: "The precision and reliability of CUAstro&apos;s indoor navigation system is impressive. It&apos;s transformed how we handle facility security.",
          author: "Michael Chen",
          position: "Security Manager",
          company: "SecureSpace Solutions"
       },
       {
-         quote: "&quot;Implementation was smooth and the results were immediate. Our indoor mapping efficiency improved by 300%.&quot;",
+         quote: "Implementation was smooth and the results were immediate. Our indoor mapping efficiency improved by 300%.",
          author: "David Wilson",
          position: "Project Lead",
          company: "BuildTech Construction"
@@ -55,7 +55,7 @@ export const Testimonials = () => {
                            color: '$blue600'
                         }}
                      >
-                        "
+                        &quot;
                      </Text>
                      <Flex direction="column" css={{ gap: '$6' }}>
                         <Text 
