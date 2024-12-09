@@ -29,40 +29,46 @@ export const AcmeLogo = () => {
 };
 
 export const TeamMembers = {
-   DuanQiGeng: {
+   DuanQigeng: {
       name: 'Duan Qigeng',
-      pinyin: 'duan qi geng',
+      pinyin: 'duan qigeng',
       role: 'Chief Technology Officer',
-      bio: 'Research on autonomous systems'
+      bio: 'System Design / SLAM / Hardware Design'
+   },
+   XiaFeihuang: {
+      name: 'Xia Feihuang',
+      pinyin: 'xia feihuang', 
+      role: 'Research Engineer',
+      bio: 'System Research'
+   },
+   DaWan: {
+      name: 'Da Wan',
+      pinyin: 'dawan',
+      role: 'Hardware Engineer', 
+      bio: 'Hardware Design'
+   },
+   HuangYijun: {
+      name: 'Huang Yijun',
+      pinyin: 'huang yijun',
+      role: 'Software Engineer',
+      bio: 'Communication and Software Systems Design'
+   },
+   LiuXuChen: {
+      name: 'X. Liu',
+      pinyin: 'liu xuchen',
+      role: 'Control Engineer',
+      bio: 'Control'
+   },
+   ZhaoBenYun: {
+      name: 'Zhao Benyun',
+      pinyin: 'benyun zhao',
+      role: 'AI Engineer',
+      bio: 'AI Detection'
    },
    YeRen: {
       name: 'Ye Ren',
       pinyin: 'ye ren',
-      role: 'Lead Engineer',
-      bio: 'Research on SLAM'
-   },
-   HuangYiJun: {
-      name: 'Huang Yijun',
-      pinyin: 'huang yi jun',
-      role: 'Software Engineer',
-      bio: 'Full-stack development'
-   },
-   QiXing: {
-      name: 'Qi Xing',
-      pinyin: 'qi xing',
-      role: 'Research Director',
-      bio: 'Research on robotics'
-   },
-   DaWan: {
-      name: 'Da Wan',
-      pinyin: 'da wan',
-      role: 'Software Engineer',
-      bio: 'Backend development'
-   },
-   LiuXuChen: {
-      name: 'X. Liu',
-      pinyin: 'liu xu chen',
       role: 'Hardware Engineer',
-      bio: 'Hardware development'
+      bio: 'Hardware Design'
    }
 };
