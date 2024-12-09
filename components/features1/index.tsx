@@ -73,7 +73,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Obstacle Avoidance
+                        Intelligent Obstacle Avoidance
                      </Text>
                      <Text
                         span
@@ -82,9 +82,8 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                        Advanced sensors and AI algorithms enable real-time detection and avoidance 
+                        of obstacles, ensuring safe navigation in dynamic indoor environments.
                      </Text>
                   </Flex>
                </Flex>
@@ -97,7 +96,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                        Your title here
+                        Autonomous Mission Planning
                      </Text>
                      <Text
                         span
@@ -106,9 +105,8 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet nisl,
+                        Sophisticated path planning and mission control capabilities allow for 
+                        automated inspection routes and data collection with minimal human intervention.
                      </Text>
                   </Flex>
                </Flex>
