@@ -32,43 +32,43 @@ export const TeamMembers = {
    DuanQigeng: {
       name: 'Duan Qigeng',
       pinyin: 'duan qigeng',
-      role: 'Chief Technology Officer',
-      bio: 'System Design / SLAM / Hardware Design'
+      role: 'System Lead',
+      bio: 'System Design / Perception Research'
    },
    XiaFeihuang: {
       name: 'Xia Feihuang',
       pinyin: 'xia feihuang', 
-      role: 'Research Engineer',
-      bio: 'System Research'
+      role: 'Theoretical Scientist',
+      bio: 'Theoretical Research'
    },
    DaWan: {
       name: 'Da Wan',
       pinyin: 'dawan',
-      role: 'Hardware Engineer', 
-      bio: 'Hardware Design'
+      role: 'Mechanical Designer', 
+      bio: 'Mechanical System Design'
    },
    HuangYijun: {
       name: 'Huang Yijun',
       pinyin: 'huang yijun',
-      role: 'Software Engineer',
-      bio: 'Communication and Software Systems Design'
+      role: 'Software Lead',
+      bio: 'Software Systems Architecture'
    },
    LiuXuChen: {
       name: 'X. Liu',
       pinyin: 'liu xuchen',
-      role: 'Control Engineer',
-      bio: 'Control'
+      role: 'Control Researcher',
+      bio: 'Control Systems Research'
    },
    ZhaoBenYun: {
       name: 'Zhao Benyun',
       pinyin: 'benyun zhao',
-      role: 'AI Engineer',
-      bio: 'AI Detection'
+      role: 'AI Researcher',
+      bio: 'Artificial Intelligence Research'
    },
    YeRen: {
       name: 'Ye Ren',
       pinyin: 'ye ren',
-      role: 'Hardware Engineer',
-      bio: 'Hardware Design'
+      role: 'Mechanical Designer',
+      bio: 'Mechanical System Design'
    }
 };
