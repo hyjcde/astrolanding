@@ -120,23 +120,23 @@ export const Hero = () => {
             <Box
                css={{
                   position: 'relative',
-                  width: '900px',
-                  height: '500px',
+                  width: '700px',
+                  height: '400px',
                   '@lg': {
-                     width: '800px',
-                     height: '450px',
+                     width: '600px',
+                     height: '350px',
                   },
                   '@md': {
-                     width: '600px',
-                     height: '400px',
-                  },
-                  '@sm': {
                      width: '450px',
                      height: '300px',
                   },
-                  '@xs': {
-                     width: '320px',
+                  '@sm': {
+                     width: '350px',
                      height: '250px',
+                  },
+                  '@xs': {
+                     width: '280px',
+                     height: '200px',
                   },
                   borderRadius: '24px',
                   overflow: 'hidden',
