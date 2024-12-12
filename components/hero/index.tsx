@@ -120,8 +120,8 @@ export const Hero = () => {
             <Box
                css={{
                   position: 'relative',
-                  width: '700px',
-                  height: '400px',
+                  width: '350px',
+                  height: '200px',
                   '@lg': {
                      width: '600px',
                      height: '350px',
