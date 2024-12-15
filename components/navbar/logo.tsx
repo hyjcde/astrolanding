@@ -7,9 +7,10 @@ export const AcmeLogo = () => {
          align="center" 
          css={{ gap: '$6' }}
       >
+         
          <Image
-            src="/images/usr.png"
-            alt="USR Logo"
+            src="/images/cuhk.png"
+            alt="CUHK Logo"
             width={40}
             height={40}
             style={{
@@ -19,8 +20,8 @@ export const AcmeLogo = () => {
             quality={100}
          />
          <Image
-            src="/images/cuhk.png"
-            alt="CUHK Logo"
+            src="/images/usr.png"
+            alt="USR Logo"
             width={40}
             height={40}
             style={{
