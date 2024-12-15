@@ -1,16 +1,35 @@
 import Image from 'next/image';
+import { Flex } from '../styles/flex';
 
 export const AcmeLogo = () => {
    return (
-      <Image
-         src="/images/cuhk.png"
-         alt="CUHK Logo"
-         width={40}
-         height={40}
-         style={{
-            objectFit: 'contain'
-         }}
-      />
+      <Flex 
+         align="center" 
+         css={{ gap: '$6' }}
+      >
+         <Image
+            src="/images/usr.png"
+            alt="USR Logo"
+            width={40}
+            height={40}
+            style={{
+               objectFit: 'contain'
+            }}
+            priority={true}
+            quality={100}
+         />
+         <Image
+            src="/images/cuhk.png"
+            alt="CUHK Logo"
+            width={40}
+            height={40}
+            style={{
+               objectFit: 'contain'
+            }}
+            priority={true}
+            quality={100}
+         />
+      </Flex>
    );
 };
 
