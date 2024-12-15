@@ -41,11 +41,15 @@ export const Team = () => {
                         }}
                      >
                         <Image
-                           src={`/team/${member.pinyin.replace(/\s+/g, '-')}.jpg`}
+                           src={member.avatar}
                            alt={member.name}
                            fill
                            style={{
                               objectFit: 'cover',
+                           }}
+                           onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.src = '/avatars/default-avatar.jpg';
                            }}
                         />
                      </Box>
