@@ -146,11 +146,32 @@ export const Hero = () => {
                <Image
                   src="/drone-hero.png"
                   alt="CUAstro Drone in Action"
-                  fill
+                  width={350}
+                  height={200}
                   style={{
                      objectFit: 'contain',
+                     borderRadius: '24px',
+                     boxShadow: '0 8px 30px rgba(0, 0, 0, 0.12)'
                   }}
                   priority
+                  css={{
+                     '@lg': {
+                        width: '600px',
+                        height: '350px',
+                     },
+                     '@md': {
+                        width: '450px',
+                        height: '300px',
+                     },
+                     '@sm': {
+                        width: '350px',
+                        height: '250px',
+                     },
+                     '@xs': {
+                        width: '280px',
+                        height: '200px',
+                     },
+                  }}
                />
             </Box>
          </Flex>
