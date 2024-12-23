@@ -88,24 +88,32 @@ export const Nav = () => {
                         <Dropdown.Item
                            key="thunder"
                            showFullDescription
-                           description="Thunder Series - Advanced Indoor Drone Platform"
+                           description="Thunder Series - Custom Modified Drone Platform"
                            icon={icons.scale}
                         >
                            Thunder Platform
                         </Dropdown.Item>
                         <Dropdown.Item
+                           key="cooling"
+                           showFullDescription
+                           description="Advanced Cooling System for Computing Units"
+                           icon={icons.activity}
+                        >
+                           Cooling System
+                        </Dropdown.Item>
+                        <Dropdown.Item
                            key="jetson"
                            showFullDescription
-                           description="Jetson Orin - Onboard Computing System"
-                           icon={icons.activity}
+                           description="Jetson Orin - High Performance Computing Board"
+                           icon={icons.flash}
                         >
                            Jetson Orin
                         </Dropdown.Item>
                         <Dropdown.Item
                            key="px4"
                            showFullDescription
-                           description="PX4-based Flight Controller"
-                           icon={icons.flash}
+                           description="PX4-based Flight Control System"
+                           icon={icons.server}
                         >
                            PX4 Controller
                         </Dropdown.Item>
@@ -115,26 +123,34 @@ export const Nav = () => {
                         <Dropdown.Item
                            key="slam"
                            showFullDescription
-                           description="SLAM System for Indoor Navigation"
-                           icon={icons.server}
+                           description="SLAM System for Indoor Navigation & Positioning"
+                           icon={icons.scale}
                         >
                            SLAM System
                         </Dropdown.Item>
                         <Dropdown.Item
                            key="mapping"
                            showFullDescription
-                           description="3D Reconstruction & Mapping"
-                           icon={icons.server}
+                           description="3D Reconstruction & Mapping Technology"
+                           icon={icons.activity}
                         >
                            3D Mapping
                         </Dropdown.Item>
                         <Dropdown.Item
                            key="ground"
                            showFullDescription
-                           description="Ground Station Control Software"
-                           icon={icons.server}
+                           description="Ground Station Control Interface"
+                           icon={icons.flash}
                         >
                            Ground Station
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                           key="control"
+                           showFullDescription
+                           description="Flight Control & Path Planning System"
+                           icon={icons.server}
+                        >
+                           Flight Control
                         </Dropdown.Item>
                      </Dropdown.Section>
                   </Dropdown.Menu>
