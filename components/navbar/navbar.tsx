@@ -86,17 +86,17 @@ export const Nav = () => {
                   >
                      <Dropdown.Section title="Hardware">
                         <Dropdown.Item
-                           key="thunder"
+                           key="radar"
                            showFullDescription
-                           description="Thunder Series - Custom Modified Drone Platform"
+                           description="Custom Modified LiDAR System for Indoor Navigation"
                            icon={icons.scale}
                         >
-                           Thunder Platform
+                           LiDAR System
                         </Dropdown.Item>
                         <Dropdown.Item
                            key="cooling"
                            showFullDescription
-                           description="Advanced Cooling System for Computing Units"
+                           description="Advanced Computer Cooling System"
                            icon={icons.activity}
                         >
                            Cooling System
@@ -104,18 +104,42 @@ export const Nav = () => {
                         <Dropdown.Item
                            key="jetson"
                            showFullDescription
-                           description="Jetson Orin - High Performance Computing Board"
+                           description="Jetson Orin - Edge Computing Platform"
                            icon={icons.flash}
                         >
                            Jetson Orin
                         </Dropdown.Item>
                         <Dropdown.Item
-                           key="px4"
+                           key="rk3588"
                            showFullDescription
-                           description="PX4-based Flight Control System"
+                           description="RK3588 - High Performance Computing Board"
                            icon={icons.server}
                         >
-                           PX4 Controller
+                           RK3588
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                           key="frame"
+                           showFullDescription
+                           description="Custom Designed Drone Frame"
+                           icon={icons.scale}
+                        >
+                           Drone Frame
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                           key="controller"
+                           showFullDescription
+                           description="Flight Control System"
+                           icon={icons.activity}
+                        >
+                           Flight Controller
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                           key="battery"
+                           showFullDescription
+                           description="High-Performance Battery System"
+                           icon={icons.flash}
+                        >
+                           Battery System
                         </Dropdown.Item>
                      </Dropdown.Section>
 
@@ -123,34 +147,42 @@ export const Nav = () => {
                         <Dropdown.Item
                            key="slam"
                            showFullDescription
-                           description="SLAM System for Indoor Navigation & Positioning"
-                           icon={icons.scale}
+                           description="SLAM System for Indoor Navigation"
+                           icon={icons.server}
                         >
                            SLAM System
                         </Dropdown.Item>
                         <Dropdown.Item
+                           key="positioning"
+                           showFullDescription
+                           description="Precise Indoor Positioning System"
+                           icon={icons.scale}
+                        >
+                           Positioning
+                        </Dropdown.Item>
+                        <Dropdown.Item
                            key="mapping"
                            showFullDescription
-                           description="3D Reconstruction & Mapping Technology"
+                           description="Real-time Mapping Technology"
                            icon={icons.activity}
                         >
-                           3D Mapping
+                           Mapping
                         </Dropdown.Item>
                         <Dropdown.Item
                            key="ground"
                            showFullDescription
-                           description="Ground Station Control Interface"
+                           description="Ground Control Station Interface"
                            icon={icons.flash}
                         >
                            Ground Station
                         </Dropdown.Item>
                         <Dropdown.Item
-                           key="control"
+                           key="reconstruction"
                            showFullDescription
-                           description="Flight Control & Path Planning System"
+                           description="3D Environment Reconstruction"
                            icon={icons.server}
                         >
-                           Flight Control
+                           3D Reconstruction
                         </Dropdown.Item>
                      </Dropdown.Section>
                   </Dropdown.Menu>
