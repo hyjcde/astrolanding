@@ -20,7 +20,7 @@ export const Hero = () => {
                left: 0,
                right: 0,
                bottom: 0,
-               background: 'rgba(0, 0, 0, 0.6)',
+               background: 'rgba(0, 0, 0, 0.7)',
                zIndex: 1
             }
          }}
@@ -89,28 +89,54 @@ export const Hero = () => {
 
                <Text
                   css={{
-                     color: '$accents8',
+                     color: '$accents7',
                      maxWidth: '600px',
-                     my: '$10',
+                     my: '$12',
+                     fontSize: '$xl',
+                     lineHeight: '1.8',
+                     letterSpacing: '0.02em',
+                     opacity: 0.9,
+                     '@sm': {
+                        fontSize: '$2xl',
+                     },
                   }}
-                  size={'$xl'}
                   span
                >
-                  Advanced autonomous drones designed specifically for indoor environments. 
-                  Navigate, map, and monitor indoor spaces with unprecedented precision.
+                  Advanced autonomous drones designed
+                  <br />
+                  specifically for indoor environments.
+                  <br />
+                  Navigate, map, and monitor indoor spaces
+                  <br />
+                  with unprecedented precision.
                </Text>
 
                <Flex
                   css={{
-                     gap: '$8',
-                     my: '$8',
+                     gap: '$10',
+                     my: '$12',
                   }}
                   wrap={'wrap'}
                >
-                  <Button size="lg" color="primary">
+                  <Button 
+                     size="lg" 
+                     color="primary"
+                     css={{
+                        fontSize: '$lg',
+                        padding: '$10 $16',
+                     }}
+                  >
                      Schedule Demo
                   </Button>
-                  <Button size="lg" bordered color="primary">
+                  <Button 
+                     size="lg" 
+                     bordered 
+                     color="primary"
+                     css={{
+                        fontSize: '$lg',
+                        padding: '$10 $16',
+                     }}
+                  >
                      Learn More
                   </Button>
                </Flex>
@@ -118,18 +144,19 @@ export const Hero = () => {
                <Flex
                   wrap={'wrap'}
                   css={{
-                     gap: '$8',
-                     mt: '$8',
-                     color: '$accents8',
+                     gap: '$12',
+                     mt: '$12',
+                     color: '$accents6',
+                     fontSize: '$lg',
                   }}
                >
-                  <Flex css={{ alignItems: 'center', gap: '$2' }}>
+                  <Flex css={{ alignItems: 'center', gap: '$3' }}>
                      <CheckIcon /> Advanced SLAM Technology
                   </Flex>
-                  <Flex css={{ alignItems: 'center', gap: '$2' }}>
+                  <Flex css={{ alignItems: 'center', gap: '$3' }}>
                      <CheckIcon /> Real-time Mapping
                   </Flex>
-                  <Flex css={{ alignItems: 'center', gap: '$2' }}>
+                  <Flex css={{ alignItems: 'center', gap: '$3' }}>
                      <CheckIcon /> Autonomous Navigation
                   </Flex>
                </Flex>
