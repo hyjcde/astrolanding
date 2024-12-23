@@ -63,6 +63,7 @@ export const TeamMembers = {
       bio: 'Software Systems Architecture',
       avatar: '/avatars/huangyijun.jpg'
    },
+   /* 暂时注释掉 LiuXuChen 的信息
    LiuXuChen: {
       name: 'X. Liu',
       pinyin: 'liu xuchen',
@@ -70,6 +71,7 @@ export const TeamMembers = {
       bio: 'Control Systems Research',
       avatar: '/avatars/liuxuchen.jpg'
    },
+   */
    ZhaoBenYun: {
       name: 'Zhao Benyun',
       pinyin: 'benyun zhao',
