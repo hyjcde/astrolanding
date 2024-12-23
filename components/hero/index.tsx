@@ -102,9 +102,8 @@ export const Hero = () => {
                   }}
                   span
                >
-                  Advanced autonomous drones designed
                   <br />
-                  specifically for indoor environments.
+                  Advanced autonomous drones designed specifically for indoor environments.
                </Text>
 
                <Text
@@ -122,9 +121,7 @@ export const Hero = () => {
                   }}
                   span
                >
-                  Navigate, map, and monitor indoor spaces
-                  <br />
-                  with unprecedented precision.
+                   Navigate, map, and monitor indoor spaces with unprecedented precision.
                </Text>
 
                <Flex
