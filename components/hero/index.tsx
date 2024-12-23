@@ -90,7 +90,7 @@ export const Hero = () => {
                <Text
                   css={{
                      color: '$accents7',
-                     maxWidth: '600px',
+                     maxWidth: '800px',
                      my: '$12',
                      fontSize: '$xl',
                      lineHeight: '1.8',
@@ -105,7 +105,23 @@ export const Hero = () => {
                   Advanced autonomous drones designed
                   <br />
                   specifically for indoor environments.
-                  <br />
+               </Text>
+
+               <Text
+                  css={{
+                     color: '$accents7',
+                     maxWidth: '800px',
+                     mb: '$12',
+                     fontSize: '$xl',
+                     lineHeight: '1.8',
+                     letterSpacing: '0.02em',
+                     opacity: 0.9,
+                     '@sm': {
+                        fontSize: '$2xl',
+                     },
+                  }}
+                  span
+               >
                   Navigate, map, and monitor indoor spaces
                   <br />
                   with unprecedented precision.
