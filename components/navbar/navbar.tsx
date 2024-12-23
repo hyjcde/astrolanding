@@ -63,11 +63,11 @@ export const Nav = () => {
                         iconRight={icons.chevron}
                         ripple={false}
                      >
-                        Solutions
+                        Products
                      </Dropdown.Button>
                   </Navbar.Item>
                   <Dropdown.Menu
-                     aria-label="CUAstro solutions"
+                     aria-label="Hardware and Software Products"
                      css={{
                         '$$dropdownMenuWidth': '340px',
                         '$$dropdownItemHeight': '70px',
@@ -84,38 +84,59 @@ export const Nav = () => {
                         },
                      }}
                   >
-                     <Dropdown.Item
-                        key="warehouse"
-                        showFullDescription
-                        description="Automated inventory tracking and infrastructure inspection in warehouses."
-                        icon={icons.scale}
-                     >
-                        Warehouse Automation
-                     </Dropdown.Item>
-                     <Dropdown.Item
-                        key="security"
-                        showFullDescription
-                        description="Autonomous patrol and monitoring for enhanced security coverage."
-                        icon={icons.activity}
-                     >
-                        Security Surveillance
-                     </Dropdown.Item>
-                     <Dropdown.Item
-                        key="inspection"
-                        showFullDescription
-                        description="Detailed infrastructure inspection and monitoring solutions."
-                        icon={icons.flash}
-                     >
-                        Infrastructure Inspection
-                     </Dropdown.Item>
-                     <Dropdown.Item
-                        key="events"
-                        showFullDescription
-                        description="Dynamic aerial coverage for indoor events and exhibitions."
-                        icon={icons.server}
-                     >
-                        Event Coverage
-                     </Dropdown.Item>
+                     <Dropdown.Section title="Hardware">
+                        <Dropdown.Item
+                           key="thunder"
+                           showFullDescription
+                           description="Thunder Series - Advanced Indoor Drone Platform"
+                           icon={icons.scale}
+                        >
+                           Thunder Platform
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                           key="jetson"
+                           showFullDescription
+                           description="Jetson Orin - Onboard Computing System"
+                           icon={icons.activity}
+                        >
+                           Jetson Orin
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                           key="px4"
+                           showFullDescription
+                           description="PX4-based Flight Controller"
+                           icon={icons.flash}
+                        >
+                           PX4 Controller
+                        </Dropdown.Item>
+                     </Dropdown.Section>
+
+                     <Dropdown.Section title="Software">
+                        <Dropdown.Item
+                           key="slam"
+                           showFullDescription
+                           description="SLAM System for Indoor Navigation"
+                           icon={icons.server}
+                        >
+                           SLAM System
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                           key="mapping"
+                           showFullDescription
+                           description="3D Reconstruction & Mapping"
+                           icon={icons.server}
+                        >
+                           3D Mapping
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                           key="ground"
+                           showFullDescription
+                           description="Ground Station Control Software"
+                           icon={icons.server}
+                        >
+                           Ground Station
+                        </Dropdown.Item>
+                     </Dropdown.Section>
                   </Dropdown.Menu>
                </Dropdown>
                <Navbar.Link 
