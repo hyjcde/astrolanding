@@ -89,13 +89,13 @@ export const Hero = () => {
 
                <Text
                   css={{
-                     color: '$accents7',
+                     color: 'rgba(255, 255, 255, 0.85)',
                      maxWidth: '800px',
                      my: '$12',
                      fontSize: '$xl',
                      lineHeight: '1.8',
                      letterSpacing: '0.02em',
-                     opacity: 0.9,
+                     textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)',
                      '@sm': {
                         fontSize: '$2xl',
                      },
@@ -109,13 +109,13 @@ export const Hero = () => {
 
                <Text
                   css={{
-                     color: '$accents7',
+                     color: 'rgba(255, 255, 255, 0.85)',
                      maxWidth: '800px',
                      mb: '$12',
                      fontSize: '$xl',
                      lineHeight: '1.8',
                      letterSpacing: '0.02em',
-                     opacity: 0.9,
+                     textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)',
                      '@sm': {
                         fontSize: '$2xl',
                      },
@@ -162,8 +162,12 @@ export const Hero = () => {
                   css={{
                      gap: '$12',
                      mt: '$12',
-                     color: '$accents6',
+                     color: 'rgba(255, 255, 255, 0.9)',
                      fontSize: '$lg',
+                     '& svg': {
+                        color: '$primary',
+                        filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))'
+                     }
                   }}
                >
                   <Flex css={{ alignItems: 'center', gap: '$3' }}>
