@@ -8,7 +8,6 @@ import { Hero } from '../components/hero';
 import { Layout } from '../components/navbar/layout';
 import { Nav } from '../components/navbar/navbar';
 import { Partners } from '../components/partners';
-import { Solutions } from '../components/plans';
 import { Achievements } from '../components/statistics';
 import { Box } from '../components/styles/box';
 import { Team } from '../components/team';
@@ -30,9 +29,6 @@ const Home: NextPage = () => {
             </Box>
             <Box id="teams">
                <Team />
-            </Box>
-            <Box id="price">
-               <Solutions />
             </Box>
             <Box id="contact">
                <Contact />

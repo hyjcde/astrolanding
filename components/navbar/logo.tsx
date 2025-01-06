@@ -85,5 +85,19 @@ export const TeamMembers = {
       role: 'Mechanical Designer',
       bio: 'Mechanical System Design',
       avatar: '/avatars/yeren.jpg'
+   },
+   BenChen: {
+      name: 'Ben M. Chen',
+      pinyin: 'ben chen',
+      role: 'Team Supervisor',
+      bio: 'Professor, Department of Mechanical and Automation Engineering',
+      avatar: '/avatars/benchen.jpg'
+   },
+   XiChen: {
+      name: 'Xi Chen',
+      pinyin: 'xi chen',
+      role: 'Principal Investigator',
+      bio: 'Professor, Department of Mechanical and Automation Engineering',
+      avatar: '/avatars/xichen.jpg'
    }
 };

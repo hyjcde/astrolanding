@@ -1,49 +1,75 @@
-# NextJS and NextUI Landing Page Template
+# CU Astro - Indoor Autonomous Drone System
 
-You can deploy here directly to vercel [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/Siumauricio/landing-template-nextui)
+CU Astro is an advanced indoor autonomous drone system developed by the Unmanned Systems Research (USR) Group at the Chinese University of Hong Kong (CUHK). Our system combines cutting-edge technologies in robotics, computer vision, and autonomous navigation to enable safe and efficient indoor drone operations.
 
-This is a template for NextJS and NextUI. 
+The USR Group devotes to the development of advanced unmanned systems platforms and technologies for industrial applications. Our research focuses on developing innovative collaborative task assignment of multi-agent unmanned systems for general infrastructure inspection.
 
-[NextJS](https://nextjs.org/) 
-[NextUI](https://nextui.org/)
+## Core Technologies
 
-You can see the demo here: https://landing-template-nextui.vercel.app/
-For improve this template, you can create a pull request or open an issue here [Issues](https://github.com/Siumauricio/landing-template-nextui/issues) or [Pull Request](
-    https://github.com/Siumauricio/landing-template-nextui/pulls)
+### 1. Compact Drone Design
+- Lightweight and optimized structure
+- Designed specifically for indoor operations
+- Enhanced safety features for indoor environments
+- [View Repository](https://github.com)
 
-### Dark Mode
-![Landing Page Dark Mode](./public/Screenshot_2.png)
+### 2. Localization & Autonomous Exploration
+- Real-time SLAM capabilities
+- Autonomous navigation in GPS-denied environments
+- Dynamic obstacle avoidance
+- [View Repository](https://github.com)
 
-### Light Mode
-![Landing Page Light Mode](./public/Screenshot_3.png)
+### 3. 3D Reconstruction & Segmentation
+- GS-based 3D environment reconstruction
+- Real-time semantic segmentation
+- High-precision mapping capabilities
+- [View Repository](https://github.com)
 
-- Hero Section
-- Features Section 1
-- Features Section 2
-- Features Section 3
-- Testimonials Section
-- CTA Section
-- Pricing Section
-- FAQ Section
-- Footer Section
-- Dark Mode Support
-- Full Responsive
+### 4. Ground Control Station
+- Intuitive user interface
+- Real-time monitoring and control
+- Mission planning and execution
+- [View Repository](https://github.com)
 
-## For Run
+## Development
 
-Install dependencies
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- Git
 
-    
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/astro-landing
+```
+
+2. Install dependencies
 ```bash
 npm install
+# or
+yarn install
 ```
 
-Start the server
-
-    
-        
+3. Start the development server
 ```bash
 npm run dev
+# or
+yarn dev
 ```
 
-Now you can visit https://localhost:3000 in your browser.
+The application will be available at [http://localhost:3000](http://localhost:3000)
+
+## Team
+
+CU Astro is developed by the Unmanned Systems Research (USR) Group at CUHK under the supervision of Prof. Ben M. Chen and Prof. Xi Chen. Our team consists of researchers and engineers specializing in robotics, computer vision, and autonomous systems.
+
+For more information about our research group, please visit [USR Group Website](http://www.mae.cuhk.edu.hk/~usr/).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For more information about CU Astro or collaboration opportunities, please contact us through the [USR Group Website](http://www.mae.cuhk.edu.hk/~usr/).
