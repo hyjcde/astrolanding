@@ -9,25 +9,25 @@ export const Partners = () => {
          title: 'Compact Drone Design',
          description: 'Lightweight and compact design optimized for indoor operations',
          video: '/videos/drone-structure.mp4',
-         repoLink: 'https://github.com/CUHK-MARS-Lab/drone-structure'
+         repoLink: 'https://github.com'
       },
       {
          title: 'Localization & Exploration',
          description: 'Autonomous navigation and environment exploration capabilities',
          video: '/videos/slam-exploration.mp4',
-         repoLink: 'https://github.com/CUHK-MARS-Lab/autonomous-exploration'
+         repoLink: 'https://github.com'
       },
       {
          title: '3D Reconstruction & Segmentation',
          description: 'GS-based 3D reconstruction and semantic segmentation',
          video: '/videos/reconstruction.mp4',
-         repoLink: 'https://github.com/CUHK-MARS-Lab/3d-reconstruction'
+         repoLink: 'https://github.com'
       },
       {
          title: 'Ground Control Station',
          description: 'Comprehensive ground control and monitoring system',
          video: '/videos/ground-station.mp4',
-         repoLink: 'https://github.com/CUHK-MARS-Lab/ground-station'
+         repoLink: 'https://github.com'
       }
    ];
 
