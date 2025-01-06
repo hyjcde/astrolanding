@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { Contact } from '../components/contact';
 import { Features1 } from '../components/features1';
-import { Applications } from '../components/features2';
+// import { Applications } from '../components/features2';
 import { Technology } from '../components/features3';
 import { Footer } from '../components/footer';
 import { Hero } from '../components/hero';
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             <Box id="solutions">
                <Partners />
                <Features1 />
-               <Applications />
+               {/* <Applications /> */}
             </Box>
             <Box id="technology">
                <Technology />
