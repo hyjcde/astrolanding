@@ -1,4 +1,4 @@
-import { Button, Text } from '@nextui-org/react';
+import { Button, Link, Text } from '@nextui-org/react';
 import { GithubIcon } from '../icons/GithubIcon';
 import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
@@ -8,25 +8,25 @@ export const Partners = () => {
       {
          title: 'Compact Drone Design',
          description: 'Lightweight and compact design optimized for indoor operations',
-         video: '/videos/drone-structure.mp4',
+         video: 'https://www.youtube.com/embed/9JWXcPuAcrY',
          repoLink: 'https://github.com'
       },
       {
          title: 'Localization & Exploration',
          description: 'Autonomous navigation and environment exploration capabilities',
-         video: '/videos/slam-exploration.mp4',
+         video: 'https://www.youtube.com/embed/9JWXcPuAcrY',
          repoLink: 'https://github.com'
       },
       {
          title: '3D Reconstruction & Segmentation',
          description: 'GS-based 3D reconstruction and semantic segmentation',
-         video: '/videos/reconstruction.mp4',
+         video: 'https://www.youtube.com/embed/9JWXcPuAcrY',
          repoLink: 'https://github.com'
       },
       {
          title: 'Ground Control Station',
          description: 'Comprehensive ground control and monitoring system',
-         video: '/videos/ground-station.mp4',
+         video: 'https://www.youtube.com/embed/9JWXcPuAcrY',
          repoLink: 'https://github.com'
       }
    ];
@@ -72,22 +72,20 @@ export const Partners = () => {
                               overflow: 'hidden'
                            }}
                         >
-                           <video 
-                              autoPlay 
-                              loop 
-                              muted 
-                              playsInline
+                           <iframe 
+                              src={tech.video}
+                              title={tech.title}
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowFullScreen
                               style={{
                                  position: 'absolute',
                                  top: 0,
                                  left: 0,
                                  width: '100%',
                                  height: '100%',
-                                 objectFit: 'cover'
+                                 border: 'none'
                               }}
-                           >
-                              <source src={tech.video} type="video/mp4" />
-                           </video>
+                           />
                         </Box>
                         <Text h3>{tech.title}</Text>
                         <Text css={{ color: '$accents8' }}>
@@ -97,7 +95,7 @@ export const Partners = () => {
                            icon={<GithubIcon />}
                            ghost
                            auto
-                           as="a"
+                           as={Link}
                            href={tech.repoLink}
                            target="_blank"
                            rel="noopener noreferrer"
