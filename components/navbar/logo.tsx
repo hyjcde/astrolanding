@@ -86,6 +86,7 @@ export const TeamMembers = {
       bio: 'Mechanical System Design',
       avatar: '/avatars/yeren.jpg'
    },
+   /* 暂时隐藏两位老师
    BenChen: {
       name: 'Ben M. Chen',
       pinyin: 'ben chen',
@@ -100,4 +101,5 @@ export const TeamMembers = {
       bio: 'Professor, Department of Mechanical and Automation Engineering',
       avatar: '/avatars/xichen.jpg'
    }
+   */
 };
